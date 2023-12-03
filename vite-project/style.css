@@ -63,8 +63,37 @@ body {
     border: solid 2px darkgrey;
     pointer-events: none;
 }
+
 .primary-button, .secondary-button {
+    font-size: 10px;
     width: 130px;
     height: 25px;
     border-radius: 10px;
+    border: none;
+}
+
+.primary-button.active {
+    background-color: #ff2f55;
+    color: white;
+
+}
+
+.primary-button.active:hover {
+    background-color: #7c0318;
+    transition: background-color 0.2s;
+    color: white;
+    cursor: pointer;
+}
+.primary-button.disabled, .secondary-button.disabled {
+    background-color: #e3e3e3;
+    color: #8d8d8d;
+}
+
+.secondary-button.active {
+    background-color: #1DA1F2;
+    color: white;
+}
+.secondary-button.active:hover {
+    background-color: #0f608d;
+    cursor: pointer;
 }
