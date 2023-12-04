@@ -19,7 +19,7 @@ body {
     margin: 0;
 }
 
-.first-buttons, .second-buttons, .third-buttons {
+.first-buttons, .second-buttons, .third-buttons, .forth-buttons {
     display: flex;
     gap: 20px;
     margin: 20px 0 40px 20px;
@@ -134,4 +134,31 @@ body {
     outline: 4px solid #6ac6ff;
     transition: color 0.1s, outline 0.1s;
     cursor: pointer;
+}
+
+.button3 {
+    width: 130px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.button3.active {
+    background-color: #ffd85e;
+    color: white;
+}
+.button3.active:hover {
+    background-color: white;
+    color: #ffd85e;
+    border: 2px solid #ffd85e;
+    transition: color 0.2s, border 0.2s, background-color 0.2s;
+    cursor: pointer;
+}
+
+.button3.disabled {
+    background-color: #f1f3ff;
+    color: #8d8d8d;
+    pointer-events: none;
 }
