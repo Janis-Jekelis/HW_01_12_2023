@@ -64,12 +64,13 @@ body {
     pointer-events: none;
 }
 
-.primary-button, .secondary-button,.primary-button-transparent,.secondary-button-transparent {
+.primary-button, .secondary-button, .primary-button-transparent, .secondary-button-transparent {
     font-size: 10px;
-    width: 130px;
-    height: 25px;
-    border-radius: 10px;
+    width: 125px;
+    height: 30px;
+    border-radius: 15px;
     border: none;
+    font-weight: bold;
 }
 
 .primary-button.active {
@@ -84,6 +85,7 @@ body {
     color: white;
     cursor: pointer;
 }
+
 .primary-button.disabled, .secondary-button.disabled {
     background-color: #e3e3e3;
     color: #8d8d8d;
@@ -93,7 +95,43 @@ body {
     background-color: #1DA1F2;
     color: white;
 }
+
 .secondary-button.active:hover {
     background-color: #0f608d;
+    cursor: pointer;
+}
+
+.primary-button-transparent.active {
+    background-color: transparent;
+    color: #ff2f55;
+    border: solid 2px #ff2f55;
+}
+
+.primary-button-transparent.active:hover {
+    border: 2px solid #7c0318;
+    color: #7c0318;
+    outline: 4px solid #ff7a89;
+    transition: color 0.1s, outline 0.1s;
+    cursor: pointer;
+}
+
+.primary-button-transparent.disabled, .secondary-button-transparent.disabled {
+    color: #bebebe;
+    border: 2px solid #bebebe;
+    background-color: white;
+    pointer-events: none;
+}
+
+.secondary-button-transparent.active {
+    background-color: transparent;
+    color: #1DA1F2;
+    border: solid 1px #1DA1F2;
+}
+
+.secondary-button-transparent.active:hover {
+    border: 2px solid #0f608d;
+    color: #0f608d;
+    outline: 4px solid #6ac6ff;
+    transition: color 0.1s, outline 0.1s;
     cursor: pointer;
 }
