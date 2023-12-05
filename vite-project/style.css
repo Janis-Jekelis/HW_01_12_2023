@@ -15,7 +15,7 @@ body {
 }
 
 .main_h1 {
-    font-family:"Roboto Thin", sans-serif;
+    font-family: "Roboto Thin", sans-serif;
     font-weight: normal;
     margin: 0;
 }
@@ -330,38 +330,39 @@ body {
     border: none;
 }
 
-.button5.active{
+.button5.active {
     background-color: #e5e0e0;
 }
 
-.button5.disabled{
+.button5.disabled {
     background-color: dimgrey;
 }
 
-.button5.active:hover{
+.button5.active:hover {
     cursor: pointer;
 }
 
-.button5.active:active{
+.button5.active:active {
     background-color: #3f3f3f;
 }
+
 .toasts {
     color: white;
     position: absolute;
     left: 20px;
     bottom: 30px;
-    font-family:"Roboto Thin", sans-serif;
+    font-family: "Roboto Thin", sans-serif;
     font-weight: normal;
 }
 
 .container {
+    display: flex;
     margin: 30px 0;
     height: 450px;
 }
 
 .toast {
     display: flex;
-    background-color: #6ac6ff;
     width: 210px;
     height: 32px;
     margin: 0 0 10px 20px;
@@ -369,6 +370,10 @@ body {
     align-items: center;
     border-radius: 3px;
     position: relative;
+}
+
+.toast p {
+    margin: 0 0 0 10px;
 }
 
 .toast button {
@@ -379,6 +384,91 @@ body {
     color: white;
 }
 
-.toast button:hover{
+.toast button:hover {
     cursor: pointer;
+}
+
+.info-toast {
+    background-color: #0c539a;
+    color: white;
+}
+
+.success-toast {
+    background-color: #2fbb2f;
+    color: white;
+}
+
+.error-toast {
+    background-color: red;
+    color: white;
+}
+
+.warning-toast {
+    background-color: #ff8000;
+    color: white;
+}
+
+.default-toast {
+    background-color: #4b4949;
+    color: white;
+}
+
+.transparent {
+    border: 1px solid rgb(215, 213, 213);
+    background-color: white;
+
+}
+
+.transparent button {
+    color: darkgray;
+}
+
+.info-toast-transparent {
+    color: #0c539a;
+}
+
+.success-toast-transparent {
+    color: #2fbb2f;
+}
+
+.error-toast-transparent {
+    color: red;
+}
+
+.warning-toast-transparent {
+    color: #ff8000;
+}
+
+
+.right-column {
+
+    width: 500px;
+}
+
+.row {
+    display: inline-block;
+    margin: 0 0 15px 20px;
+
+}
+
+
+    .message {
+        display: flex;
+        gap: 20px;
+        border-radius: 3px;
+        background-color: #252424;
+    }
+
+
+
+.text-column {
+    padding: 0 0 0 20px;
+    max-width: 200px;
+
+}
+
+
+.action-toast {
+    color: white;
+    font-size: 14px;
 }
