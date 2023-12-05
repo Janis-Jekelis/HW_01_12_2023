@@ -7,7 +7,7 @@ body {
 
 .header {
     display: flex;
-    background-color: #423e3e;
+    background-color: #252424;
     color: white;
     height: 100px;
     padding: 10px;
@@ -15,6 +15,7 @@ body {
 }
 
 .main_h1 {
+    font-family:"Roboto Thin", sans-serif;
     font-weight: normal;
     margin: 0;
 }
@@ -231,3 +232,153 @@ body {
     cursor: pointer;
 }
 
+.anchor-button.active {
+    text-decoration: none;
+    color: black;
+}
+
+.anchor-button.active:hover {
+    text-decoration: none;
+    color: #6ac6ff;
+    transition: color 0.2s;
+}
+
+.anchor-button.disabled {
+    text-decoration: none;
+    color: lightslategrey;
+    pointer-events: none;
+}
+
+.sixth-buttons {
+    gap: 40px;
+}
+
+.primary-button2 {
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+.primary-button2.active {
+    background-color: #910052;
+}
+
+.primary-button2.disabled {
+    background-color: darkgrey;
+    pointer-events: none;
+}
+
+.primary-button2.active:hover {
+    background-color: #e5005d;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.toasts-container {
+    background-color: #252424;
+    height: 300px;
+    position: relative;
+
+}
+
+.toasts-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 20px;
+    position: absolute;
+    width: 400px;
+    gap: 20px;
+}
+
+.button4 {
+    width: 160px;
+    height: 42px;
+    border-radius: 2px;
+    border: none;
+    color: white;
+    margin: 0 0 10px
+}
+
+.button4.active {
+    background-color: #252424;
+    border: 1px solid #00466c;
+}
+
+.button4.disabled {
+    background-color: #8d8d8d;
+    pointer-events: none;
+}
+
+.button4.active:hover {
+    border: 2px solid #046aa1;
+    transition: border-color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.button4.active:active {
+    background-color: #000057;
+    border: none;
+
+}
+
+.button5 {
+    width: 160px;
+    height: 35px;
+    border-radius: 2px;
+    border: none;
+}
+
+.button5.active{
+    background-color: #e5e0e0;
+}
+
+.button5.disabled{
+    background-color: dimgrey;
+}
+
+.button5.active:hover{
+    cursor: pointer;
+}
+
+.button5.active:active{
+    background-color: #3f3f3f;
+}
+.toasts {
+    color: white;
+    position: absolute;
+    left: 20px;
+    bottom: 30px;
+    font-family:"Roboto Thin", sans-serif;
+    font-weight: normal;
+}
+
+.container {
+    margin: 30px 0;
+    height: 450px;
+}
+
+.toast {
+    display: flex;
+    background-color: #6ac6ff;
+    width: 210px;
+    height: 32px;
+    margin: 0 0 10px 20px;
+    font-size: 14px;
+    align-items: center;
+    border-radius: 3px;
+    position: relative;
+}
+
+.toast button {
+    position: absolute;
+    right: 3px;
+    border: none;
+    background-color: inherit;
+    color: white;
+}
+
+.toast button:hover{
+    cursor: pointer;
+}
