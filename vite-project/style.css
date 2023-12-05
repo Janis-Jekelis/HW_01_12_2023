@@ -447,23 +447,22 @@ body {
 
 .row {
     display: inline-block;
-    margin: 0 0 15px 20px;
+    margin: 0 0 10px 20px;
 
 }
 
 
-    .message {
-        display: flex;
-        gap: 20px;
-        border-radius: 3px;
-        background-color: #252424;
-    }
-
+.message {
+    display: flex;
+    gap: 20px;
+    border-radius: 3px;
+    background-color: #252424;
+}
 
 
 .text-column {
     padding: 0 0 0 20px;
-    max-width: 200px;
+    max-width: 350px;
 
 }
 
@@ -471,4 +470,25 @@ body {
 .action-toast {
     color: white;
     font-size: 14px;
+    margin: 12px 0;
+}
+
+.control-column{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.control-column a  {
+    text-decoration: none;
+    color: #68a4de;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.control-column button{
+    border: none;
+    color: white;
+    background-color: inherit;
+    font-weight: bold;
+    margin: 0 10px 0 0;
 }
